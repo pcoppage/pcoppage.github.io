@@ -1,0 +1,10 @@
+# Site settings
+title: Katy's Website
+email: kdecorah@albany.edu
+description: Katy is a front-end developer from New York.
+url: katystudent.github.io
+github_username: katystudent
+
+# Build settings
+markdown: kramdown
+permalink: pretty
