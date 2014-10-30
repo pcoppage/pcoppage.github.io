@@ -1,9 +1,9 @@
 # Site settings
-title: Katy's Website
-email: kdecorah@albany.edu
-description: Katy is a front-end developer from New York.
-url: katystudent.github.io
-github_username: katystudent
+title: Peston's Website
+email: Pcoppage@albany.edu
+description: Preston is awesome.
+url: pcoppage.github.io
+github_username: pcoppage
 
 # Build settings
 markdown: kramdown
