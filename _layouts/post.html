@@ -2,5 +2,10 @@
 {% include header.html %}
 {% if page.image %} <img src="{{page.image}}" alt=""> {% endif %}
 <h1>Blog post: {{page.title}}</h1>
-{{ content }}
+
+ <div class="main-content">
+    <div class="container">
+		{{ content }}
+	</div>
+</div>
 {% include footer.html %}
