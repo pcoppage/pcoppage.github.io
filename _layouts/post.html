@@ -1,10 +1,11 @@
 {% include head.html %}
 {% include header.html %}
 {% if page.image %} <img src="{{page.image}}" alt=""> {% endif %}
-<h1>Blog post: {{page.title}}</h1>
+
 
  <div class="main-content">
     <div class="container">
+    	<h1>Blog post: {{page.title}}</h1>
 		{{ content }}
 	</div>
 </div>
