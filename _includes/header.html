@@ -1,13 +1,15 @@
  <header class="site-header cf">
-                <div class="container">
-                    <a href="#" class="site-title"> <img src="https://dl-web.dropbox.com/get/Website/Logo.png?_subject_uid=32590879&w=AABhgAP6FEpdol5m28TPwdXSfldztwQxf69ALxdpqs5cqg"></a>
-                    <nav class="nav-bar">
-                        <ul class="header-nav">
-                            <li><a class="nav-link" href="#">Blog</a></li>
-                            <li><a class="nav-link" href="about-me.html">About Me</a></li>
-                            <li><a class="nav-link" href="#">Portfolio</a></li>
-                            <li><a class="nav-link" href="#">Contact</a></li>
-                    </nav>
-                </div>
+    <div class="container">
+        <a href="#" class="site-title"> <img src="https://dl-web.dropbox.com/get/Website/Logo.png?_subject_uid=32590879&w=AABhgAP6FEpdol5m28TPwdXSfldztwQxf69ALxdpqs5cqg"></a>
+        <nav class="nav-bar">
+            <ul class="header-nav">
+                {% for nav in site.pages %}
+                {% if nav.title %}
+                <li><a class="nav-link{% if nav.title == page.title %} active{% endif %}" href="{{ nav.url }}">{{ nav.title }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
 
-            </header>
+</header>
